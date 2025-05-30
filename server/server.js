@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 // Allow all origins for CORS (testing phase)
 app.use(cors({
     origin: "*", // Allow all origins
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE","OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, // Allow cookies/auth headers if needed
 }));
